@@ -1,0 +1,19 @@
+{
+  "name": "movielibrary",
+  "version": "1.0.0",
+  "description": "\"My first node project\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ktenbrook1/MovieLibraryNode.git"
+  },
+  "author": "Katelynn Tenbrook",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ktenbrook1/MovieLibraryNode/issues"
+  },
+  "homepage": "https://github.com/Ktenbrook1/MovieLibraryNode#readme"
+}
