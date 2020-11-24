@@ -45,9 +45,9 @@ $(document).ready(function() {
     (function($){
         function processForm( e ){
             var dict = {
-                Title : this["title"].value,
-                Director: this["director"].value,
-                Genre: this["genre"].value
+                title : this["title"].value,
+                director: this["director"].value,
+                genre: this["genre"].value
             };
             console.log(dict);
     
