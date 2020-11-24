@@ -28,11 +28,5 @@
     "title": "Die Hard",
     "director": "John McTiernan",
     "genre": "Action"
-  },
-  {
-    "id": 6,
-    "title": "Lion King",
-    "director": "Jon Favreau",
-    "genre": "Drama"
   }
 ]
