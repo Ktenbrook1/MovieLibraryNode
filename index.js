@@ -28,5 +28,11 @@ app.post("/api/movies", (req, res) => {
     let addedMovie = repoContext.movies.createMovie(newMovie);
     res.send(addedMovie);
 });
+app.put("/api/movies", (req, res) => {
+    let MovieToUpdate = req.body;
+    let updateMovie = repoContext.movies.updateMovie(MovieToUpdate);
+    res.send(updateMovie);
+});
+   
    
    
