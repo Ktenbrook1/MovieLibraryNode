@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // all custom jQuery will go here
     $(function(){
-        $.get("https://localhost:3000/api/movie/", function(data){    
+        $.get("http://localhost:3000/api/movies/", function(data){    
 
             data.map(function(el){
 
@@ -51,7 +51,7 @@ $(document).ready(function() {
             };
     
             $.ajax({
-                url: 'https://localhost:3000/api/movies',
+                url: 'http://localhost:3000/api/movies',
                 dataType: 'json',
                 type: 'post',
                 contentType: 'application/json',
