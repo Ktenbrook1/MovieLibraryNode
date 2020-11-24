@@ -1,9 +1,8 @@
-const repoBase = require("./repository-base.js");
+const jsonDbContext = require("./json-context.js");
 
 exports.findAllMovies = () => {
-  return repoBase.movies.findAll();
+  return jsonDbContext.movies.findAll();
 };
-
 exports.findMovieById = (id) => {
   return jsonDbContext.movies.findById(id);
 };
