@@ -49,6 +49,7 @@ $(document).ready(function() {
                 Director: this["director"].value,
                 Genre: this["genre"].value
             };
+            console.log(dict);
     
             $.ajax({
                 url: 'http://localhost:3000/api/movies',
