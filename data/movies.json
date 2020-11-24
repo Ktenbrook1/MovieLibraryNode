@@ -28,5 +28,11 @@
     "title": "Die Hard",
     "director": "John McTiernan",
     "genre": "Action"
+  },
+  {
+    "id": 6,
+    "title": "Lion Girl",
+    "director": "Jon Favreau",
+    "genre": "Drama"
   }
 ]
