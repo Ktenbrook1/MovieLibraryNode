@@ -12,9 +12,9 @@ $(document).ready(function() {
                 <td><p>${el.title}</p></td> 
                 <td><p>${el.director}</p></td>
                 <td><p>${el.genre}</p></td>
-                <td><button class= "btn-primary" id="add_image" onclick="addingAImage(movie)">ADD IMAGE</button></td>
-                <td><button class= "btn-primary id="edit_image">EDIT IMAGE</button></td>
-                <td><button class= "btn-primary id="view_image">VIEW IMAGE</button></td>
+                <td><button class= "btn btn-dark id="add_image" onclick="addingAImage(movie)">ADD IMAGE</button></td>
+                <td><button class= "btn btn-dark id="edit_image">EDIT IMAGE</button></td>
+                <td><button class= "btn btn-dark id="view_image">VIEW IMAGE</button></td>
 
                 </tr>`);
 
@@ -81,6 +81,29 @@ $(document).ready(function() {
 
 });
 
+const toggleModal = () => {
+    document.querySelector('.modal')
+      .classList.toggle('modal--hidden');
+    document.querySelector('.overlay')
+      .classList.toggle('overlay--hidden');
+  }
+  document.querySelector('#show-modal')
+    .addEventListener('click', toggleModal);
+  
+  document.querySelector('.overlay')
+    .addEventListener('click', toggleModal);
+  
+  document.querySelector('#learn-more-form')
+    .addEventListener('submit', (e) => {
+    e.preventDefault();
+    toggleModal();
+  });
+  
+  document.querySelector('.modal__close-bar span')
+    .addEventListener('click', toggleModal);
+  document.querySelector('.overlay')
+    .addEventListener('click', toggleModal);
+  
        
 
 
